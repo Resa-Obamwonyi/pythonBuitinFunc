@@ -23,3 +23,10 @@ print(odd)
 odd = [1,3,5,7,9,11,13,15,17]
 odd_squared = [i*i for i in odd]
 print(odd_squared)
+
+
+#list comprehension using conditionals
+vowels = "aeiouAEIOU"
+sentence = "do I have a vowel here Please?"
+search_vowel = len([i for i in sentence if i in vowels])
+print(search_vowel)
