@@ -39,6 +39,21 @@ def withdraw(amount):
 
 print(withdraw(150))
 print(withdraw(60))
-print(withdraw(260))
+print(withdraw(860))
 print(withdraw(540))
 print(withdraw(370))
+
+
+# def no_notes(amount):
+#   notes = [100, 50, 20]
+#   note_counter= [0,0,0]
+#
+#   for i, j in zip(notes, note_counter):
+#       if amount >= i:
+#           j = amount // i
+#           amount = amount - j * i
+#           dict = (i, " : ", j)
+#           return dict
+
+
+# print(no_notes(860))
