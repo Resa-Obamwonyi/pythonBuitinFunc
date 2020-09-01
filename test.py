@@ -6,11 +6,11 @@ def withdraw(amount):
 
         if amount >= 100:
             amountList[0] = amount // 100
-            hundred_remainder = amount - (amountList[0] * 100)
+            hundred_remainder = amount - (amountList[0] * 100) # remainder after removing hundred value from amount
 
             if hundred_remainder >= 50 and hundred_remainder%50 >= 20:
                 amountList[1] = hundred_remainder//50
-                twenty_remainder = hundred_remainder -(amountList[1] * 50)
+                twenty_remainder = hundred_remainder -(amountList[1] * 50) # remainder after removing fifty value from 100 remainder
 
                 if twenty_remainder >= 20:
                     amountList[2] = twenty_remainder // 20
@@ -23,7 +23,7 @@ def withdraw(amount):
 
         elif amount >= 50 and amount%50 >= 20:
             amountList[1] = amount // 50
-            fifty_remainder = amount - (amountList[1] * 50)
+            fifty_remainder = amount - (amountList[1] * 50) #remainder after removing fifty value from amount
 
             if fifty_remainder >= 20:
                 amountList[2] = fifty_remainder // 20
@@ -35,12 +35,10 @@ def withdraw(amount):
             amountList[2] = amount // 20
 
 
+
         return amountList
 
-print(withdraw(150))
-print(withdraw(60))
-print(withdraw(860))
-print(withdraw(540))
+
 print(withdraw(370))
 
 
